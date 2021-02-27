@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace RallyDakar.Dominio.Entidades
 {
@@ -11,5 +12,7 @@ namespace RallyDakar.Dominio.Entidades
 
         //Nullable em C# é representado por "?"
         public DateTime? DataFim { get; set; }
+
+        public ICollection<Equipe> Equipes { get; set; }
     }
 }

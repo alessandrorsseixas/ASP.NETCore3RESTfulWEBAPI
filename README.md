@@ -79,6 +79,43 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
     - Adicionar Entidade Piloto
     - Adicionar Entidade Telemetria
 
-    ##### 
-
-​	
+24. ##### Entidades e seus Relacionamentos
+	- Alterar o nome de Equipes para Equipe
+	
+	- Atualizar as propriedades da temporada
+		- Uma temporada pode ter uma ou mais equipes: Criar o relacionamento de Temporada para Equipes
+			```
+			public ICollection<Equipe> Equipes { get; set; }
+    		```
+    
+	- Atualizar as propriedades da Equipe
+		
+		- Uma Equipe está em uma temporada: Criar campo TemporadaID para o EF e Criar o relacionamento para Temporada
+		
+		- Uma Equipe tem um(a) ou mais pilotos(as): Criar o relacionamento Equipe com Piloto
+		
+		  ```
+		   // Atributo para identificar o relacionamento no banco de dados para o entity framework(EF)
+		   public int TemporadaId { get; set; }
+		  // Ao utiliar Virtual o EF o entity framework em tempo de execução possibilita carregar os dados da entitidade.
+		  public virtual Temporada Temporada { get; set;}
+		  // Uma equipe possui um ou mais pilotos
+		  public ICollection<Piloto> Pilotos { get; set; }
+		  ```
+		
+	- Atualizar as propriedades do Piloto
+	
+		```
+		namespace RallyDakar.Dominio.Entidades
+		{
+			public class Piloto
+			{
+				public int Id { get; set; }
+				public string Nome { get; set; }
+				public int EquipeID { get; set; }
+				public virtual Equipe Equipe { get; set; }
+			}
+		}
+		```
+	
+	
