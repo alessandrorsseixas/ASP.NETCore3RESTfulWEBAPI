@@ -56,6 +56,29 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
     - Adicionar a pasta de Servicos(AntiPaterns) - Ideal trabalhar Serviços com o padrão Inversão de Controle
     - Adicionar a pasta de Interfaces 
 
+23. ##### Criando as Entidades
+
+    - Adicionar Entidade Temporada
+
+      - ```
+        namespace RallyDakar.Dominio.Entidades
+        {
+            public class Temporada
+            {
+                public int Id { get; set; }
+                public string Nome { get; set; }
+        
+                public DateTime DataInicio { get; set; }
+        		//Nullable em C# é representado por "?"
+                public DateTime? DataFim { get; set; }
+            }
+        }	
+        ```
+
+    - Adicionar Entidade Equipes
+    - Adicionar Entidade Piloto
+    - Adicionar Entidade Telemetria
+
     ##### 
 
 ​	
