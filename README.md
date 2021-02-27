@@ -158,3 +158,5 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
       ```
       public ICollection<Telemetria> Telemetrias { get; set; }
       ```
+26. ##### Enviando a Solução Para o GitHub
+	- Ensina a publicar a atualização do projeto no Github
