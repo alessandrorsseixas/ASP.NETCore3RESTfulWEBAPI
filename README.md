@@ -47,11 +47,15 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 21. ##### Abordagem Que Será Adotada
 
     - Abordagem a ser adotada DDD
-
+    
 22. ##### Adicionando as Pastas do Projeto
 
-- Estruturar o projeto do modo AntiPadrão
-- Adicionar a pasta de Entidades(Partners) - Eu gosto de trabalhar em inglês
-- Adicionar a pasta de Repositorios(AntiPaterns) - Ideal trabalhar Repositórios com o padrão Inversão de Controle
-- Adicionar a pasta de Servicos(AntiPaterns) - Ideal trabalhar Serviços com o padrão Inversão de Controle
-- Adicionar a pasta de Interfaces 
+    - Estruturar o projeto do modo AntiPadrão
+    - Adicionar a pasta de Entidades(Partners) - Eu gosto de trabalhar em inglês
+    - Adicionar a pasta de Repositorios(AntiPaterns) - Ideal trabalhar Repositórios com o padrão Inversão de Controle
+    - Adicionar a pasta de Servicos(AntiPaterns) - Ideal trabalhar Serviços com o padrão Inversão de Controle
+    - Adicionar a pasta de Interfaces 
+
+    ##### 
+
+​	
