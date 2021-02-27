@@ -14,5 +14,7 @@ namespace RallyDakar.Dominio.Entidades
         public DateTime? DataFim { get; set; }
 
         public ICollection<Equipe> Equipes { get; set; }
+
+        public ICollection<Telemetria> Telemetrias { get; set; }
     }
 }
