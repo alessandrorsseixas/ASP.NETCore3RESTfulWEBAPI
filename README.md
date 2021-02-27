@@ -43,3 +43,7 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
     - Utilizar o padrão NomeCliente.NomeProjeto.NomeBiblioteca
     - Adicionar uma biblioteca de classes .Net Standard chamada RallyDakar.Dominio
     - Adicionar um Projeto de Teste do Tipo MSTest na Pasta de Dominiochamada RallyDakar.Dominio.Testes
+
+21. ##### Abordagem Que Será Adotada
+
+    - Abordagem a ser adotada DDD
