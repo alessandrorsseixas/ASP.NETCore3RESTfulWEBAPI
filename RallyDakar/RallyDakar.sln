@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Dominio", "0 - Dominio", "{0F81F5E4-EC37-49E5-80DF-0ECB4C2099F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RallyDakar.Dominio", "RallyDakar.Dominio\RallyDakar.Dominio.csproj", "{242F587B-EE50-4B30-BD8F-A5FBF688F6E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RallyDakar.Dominio.Testes", "RallyDakar.Dominio.Testes\RallyDakar.Dominio.Testes.csproj", "{1ECD1883-A655-4FB7-B3DF-E77759EBB5A1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{242F587B-EE50-4B30-BD8F-A5FBF688F6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242F587B-EE50-4B30-BD8F-A5FBF688F6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242F587B-EE50-4B30-BD8F-A5FBF688F6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242F587B-EE50-4B30-BD8F-A5FBF688F6E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECD1883-A655-4FB7-B3DF-E77759EBB5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECD1883-A655-4FB7-B3DF-E77759EBB5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECD1883-A655-4FB7-B3DF-E77759EBB5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECD1883-A655-4FB7-B3DF-E77759EBB5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{242F587B-EE50-4B30-BD8F-A5FBF688F6E7} = {0F81F5E4-EC37-49E5-80DF-0ECB4C2099F9}
+		{1ECD1883-A655-4FB7-B3DF-E77759EBB5A1} = {0F81F5E4-EC37-49E5-80DF-0ECB4C2099F9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88EA5BAE-1A29-4A28-864F-C068ED90E005}
