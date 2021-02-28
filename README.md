@@ -188,9 +188,7 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
       - Criar Pasta de Temporadas no projeto de teste para armazenar os testes da classe temporada
       
       - Criar Classe de Teste "TemporadaTestes.cs", Exemplo para demonstrar uma classe de teste unificada com todos os testes(Classe Comentada para não impactar no projeto)
-      
-      ​	
-      
+    
       ```
       //using Microsoft.VisualStudio.TestTools.UnitTesting;
       //using System;
@@ -206,7 +204,7 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
       //}
       
       ```
-      
+    
       - Criar Classe de teste "AdicionarEquipesTeste.cs"
 
          
@@ -264,5 +262,16 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
         }
         
         ```
+30. ##### Aplicando o Assert no Teste
 
-        
+	- Criar o teste EquipesAdicionadasComSucesso.cs para validar se as equipes estão sendo adicionadas corretamente   
+	
+	  ```
+	  [TestMethod]
+	  public void EquipesAdicionadasComSucesso()
+	  {
+	  Assert.IsTrue(temporada.Equipes.Count() > 1);
+	  }
+	  ```
+	
+	  

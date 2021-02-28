@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RallyDakar.Dominio.Entidades;
+using System.Linq;
 
 namespace RallyDakar.Dominio.Testes.Temporadas
 {
@@ -45,6 +46,12 @@ namespace RallyDakar.Dominio.Testes.Temporadas
             temporada.AdicionarEquipe(equipe1);
             temporada.AdicionarEquipe(equipe2);
             temporada.AdicionarEquipe(equipe3);
+        }
+
+        [TestMethod]
+        public void EquipesAdicionadasComSucesso()
+        {
+            Assert.IsTrue(temporada.Equipes.Count() > 1);
         }
     }
 }
