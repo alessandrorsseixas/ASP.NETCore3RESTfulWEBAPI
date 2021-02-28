@@ -290,5 +290,6 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  	Equipes = new List<Equipe>();
 	  }
 	  ```
+32. ##### Executando Testes
+	  - Executar o teste com sucesso
 	
-	  
