@@ -183,5 +183,86 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  
 	  }
 	  ```
-	
-	  
+
+29. ##### Criando o Primeiro Teste	
+      - Criar Pasta de Temporadas no projeto de teste para armazenar os testes da classe temporada
+      
+      - Criar Classe de Teste "TemporadaTestes.cs", Exemplo para demonstrar uma classe de teste unificada com todos os testes(Classe Comentada para não impactar no projeto)
+      
+      ​	
+      
+      ```
+      //using Microsoft.VisualStudio.TestTools.UnitTesting;
+      //using System;
+      //using System.Collections.Generic;
+      //using System.Text;
+      
+      //namespace RallyDakar.Dominio.Testes.Temporadas
+      //{
+      //    [TestClass]
+      //    public class TemporadaTestes
+      //    {
+      //    }
+      //}
+      
+      ```
+      
+      - Criar Classe de teste "AdicionarEquipesTeste.cs"
+
+         
+
+        ```
+        using Microsoft.VisualStudio.TestTools.UnitTesting;
+        using RallyDakar.Dominio.Entidades;
+        
+        namespace RallyDakar.Dominio.Testes.Temporadas
+        {
+            [TestClass]
+            public class AdicionarEquipesTeste
+            {
+                Temporada temporada;
+                Equipe equipe1;
+                Equipe equipe2;
+                Equipe equipe3;
+        
+        
+                // Metodo de inicialização do Teste
+                [TestInitialize]
+                public void Initialize()
+                {
+                    temporada = new Temporada()
+                    {
+                        Id = 1,
+                        Nome = "Temporada2020"
+        
+                    };
+        
+                    equipe1 = new Equipe()
+                    {
+                        Id = 1,
+                        Nome = "EquipeTeste1"
+        
+                    };
+                    equipe2 = new Equipe()
+                    {
+                        Id = 2,
+                        Nome = "EquipeTeste2"
+        
+                    };
+                    equipe3 = new Equipe()
+                    {
+                        Id = 3,
+                        Nome = "EquipeTeste3"
+        
+                    };
+        
+                    temporada.AdicionarEquipe(equipe1);
+                    temporada.AdicionarEquipe(equipe2);
+                    temporada.AdicionarEquipe(equipe3);
+                }
+            }
+        }
+        
+        ```
+
+        
