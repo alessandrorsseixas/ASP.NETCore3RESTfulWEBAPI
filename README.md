@@ -294,3 +294,5 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  - Executar o teste com sucesso
 33. ##### Sincronizando Projeto (GitHub)
 	  - Projeto atualizado no GitHub
+34. ##### Sincronizando Projeto (GitHub)
+	  - Explicado como criar outros testes
