@@ -280,7 +280,7 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	
 	- Ao executar o teste foi gerado um erro devido a ICollection<Equipe> não estava instanciado. Será criado o método construtor para instanciar a lista.
 	
-	  ![](\..\Attachment\Erro_Teste.PNG)
+	  ![](..\Attachment\Erro_Teste.PNG)
 	
 	  ![](\..\Attachment\MotivoErro.PNG)
 	
