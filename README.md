@@ -273,5 +273,22 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  Assert.IsTrue(temporada.Equipes.Count() > 1);
 	  }
 	  ```
+31. ##### Usando o gerenciador de Testes	
+	- Para executar o teste é preciso que a solução esteja compilando 
+	
+	- Entrar no Gerenciador de testes Teste => Gerenciar Teste (Crtl+ E,T)
+	
+	- Ao executar o teste foi gerado um erro devido a ICollection<Equipe> não estava instanciado. Será criado o método construtor para instanciar a lista.
+	
+	  ![](C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\Attachment\Erro_Teste.PNG)
+	
+	  ![](C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\Attachment\MotivoErro.PNG)
+	
+	  ```
+	  public Temporada()
+	  {
+	  	Equipes = new List<Equipe>();
+	  }
+	  ```
 	
 	  
