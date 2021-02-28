@@ -273,7 +273,7 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  Assert.IsTrue(temporada.Equipes.Count() > 1);
 	  }
 	  ```
-30. ##### Usando o gerenciador de Testes	
+31. ##### Usando o gerenciador de Testes	
 	- Para executar o teste é preciso que a solução esteja compilando 
 	
 	- Entrar no Gerenciador de testes Teste => Gerenciar Teste (Crtl+ E,T)
