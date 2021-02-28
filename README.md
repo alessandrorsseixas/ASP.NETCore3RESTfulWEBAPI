@@ -292,4 +292,5 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  ```
 32. ##### Executando Testes
 	  - Executar o teste com sucesso
-	
+33. ##### Sincronizando Projeto (GitHub)
+	  - Projeto atualizado no GitHub
