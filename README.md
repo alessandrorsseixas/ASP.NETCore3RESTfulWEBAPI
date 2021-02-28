@@ -163,3 +163,25 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	
 27. ##### Testes Unitários
 	- Explica um pouco do TDD e qual abordagem que será adotada
+	
+28. ##### Adicionando um Comportamento(Método)
+	- Criar Método com validações simples Adicionar Equipe
+	
+	  ```
+	   public void AdicionarEquipe(Equipe equipe)
+	   {
+	       //Pré condição
+	       if (equipe != null)
+	       {
+	  
+	          if (!string.IsNullOrEmpty(equipe.Nome))
+	          {
+	  
+	                  Equipes.Add(equipe);
+	          }
+	      }
+	  
+	  }
+	  ```
+	
+	  
