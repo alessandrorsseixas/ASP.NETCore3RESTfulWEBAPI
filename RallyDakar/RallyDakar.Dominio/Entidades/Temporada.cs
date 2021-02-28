@@ -6,6 +6,10 @@ namespace RallyDakar.Dominio.Entidades
 {
     public class Temporada
     {
+        public Temporada()
+        {
+            Equipes = new List<Equipe>();
+        }
         public int Id { get; set; }
         public string Nome { get; set; }
 
@@ -14,9 +18,9 @@ namespace RallyDakar.Dominio.Entidades
         //Nullable em C# é representado por "?"
         public DateTime? DataFim { get; set; }
 
-        public ICollection<Equipe> Equipes { get; set; }
+        public virtual ICollection<Equipe> Equipes { get; set; }
 
-        public ICollection<Telemetria> Telemetrias { get; set; }
+        public virtual ICollection<Telemetria> Telemetrias { get; set; }
 
         public void AdicionarEquipe(Equipe equipe)
         {
