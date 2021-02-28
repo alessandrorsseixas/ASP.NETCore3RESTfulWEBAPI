@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace RallyDakar.Dominio.Entidades
 {
@@ -16,5 +17,20 @@ namespace RallyDakar.Dominio.Entidades
         public ICollection<Equipe> Equipes { get; set; }
 
         public ICollection<Telemetria> Telemetrias { get; set; }
+
+        public void AdicionarEquipe(Equipe equipe)
+        {
+            //Pré condição
+            if (equipe != null)
+            {
+
+                if (!string.IsNullOrEmpty(equipe.Nome))
+                {
+
+                    Equipes.Add(equipe);
+                }
+            }
+
+        }
     }
 }
