@@ -6,10 +6,7 @@ namespace RallyDakar.Dominio.Entidades
 {
     public class Temporada
     {
-        public Temporada()
-        {
-            Equipes = new List<Equipe>();
-        }
+      
         public int Id { get; set; }
         public string Nome { get; set; }
 
