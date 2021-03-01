@@ -300,3 +300,30 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	- Adicionar a pasta DbContext no Domínio
 	- Adicionar na pasta DbContext na classe RallyDbContext
 	- Adicionar a referência do EF em memória(Microsoft.EntityFrameworkCore.InMemory 3.1.12)
+36. ##### Adicionando o Contexto de Banco de Dados
+	- Escrever o source na classe RallyDbContext
+	
+	  ```
+	  using Microsoft.EntityFrameworkCore;
+	  using RallyDakar.Dominio.Entidades;
+	  
+	  namespace RallyDakar.Dominio.DbContexto
+	  {
+	      public class RallyDbContext:DbContext
+	      {
+	          //Configurando os DbSets
+	          public DbSet<Temporada> Temporadas { get; set; }
+	          public DbSet<Equipe> Equipes { get; set; }
+	          public DbSet<Piloto> Pilotos { get; set; }
+	          public DbSet<Telemetria> Telemetrias { get; set; }
+	  
+	          public RallyDbContext(DbContextOptions<RallyDbContext> options):base(options)
+	          {
+	  
+	          }
+	      }
+	  }
+	  
+	  ```
+	
+	  
