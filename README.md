@@ -291,6 +291,12 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  }
 	  ```
 32. ##### Executando Testes
-	  - Executar o teste com sucesso
+	- Executar o teste com sucesso
 33. ##### Sincronizando Projeto (GitHub)
-	  - Projeto atualizado no GitHub
+	- Projeto atualizado no GitHub
+34. ##### Resumo Dos Testes Unitários
+	- Explicado como criar outros testes
+35. ##### Entity Framework Core e Banco de Dados Em Memória
+	- Adicionar a pasta DbContext no Domínio
+	- Adicionar na pasta DbContext na classe RallyDbContext
+	- Adicionar a referência do EF em memória(Microsoft.EntityFrameworkCore.InMemory 3.1.12)
