@@ -325,5 +325,54 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  }
 	  
 	  ```
+37. ##### Criando o Primeiro Repositório
 	
+	- Escrever a classe PilotoRepositorio onde deve conter um método para AdicionarPiloto e um para ObterTodosPilotos.
+	
+	- Criar uma variável readonly da classe de Contexto RallyDbContext onde será injetado no construtor de PilotoRepositorio
+	  
+	  ```
+	  using RallyDakar.Dominio.DbContexto;
+	  using RallyDakar.Dominio.Entidades;
+	  using System;
+	  using System.Collections.Generic;
+	  using System.Linq;
+	  using System.Text;
+	  
+	  namespace RallyDakar.Dominio.Repositorios
+	  {
+	      public class PilotoRepositorio
+	      {
+	          private readonly RallyDbContext _rallyDbContext;
+	          public PilotoRepositorio(RallyDbContext rallyDbContext)
+	          {
+	              _rallyDbContext = rallyDbContext;
+	          }
+	  
+	          public void AdicionarPiloto(Piloto piloto)
+	          {
+	              _rallyDbContext.Pilotos.Add(piloto);
+	  
+	          }
+	  
+	          public IEnumerable<Piloto> ObterTodosPilotos()
+	          {
+	  
+	             return _rallyDbContext.Pilotos.ToList();
+	  
+	          }
+	  
+	          public IEnumerable<Piloto> ObterTodosPilotos(string nome)
+	          {
+	  
+	              return _rallyDbContext.Pilotos
+	                  .Where(x=>x.Nome.Contains(nome))
+	                  .ToList();
+	  
+	          }
+	      }
+	  }
+	  
+	  ```
+	  
 	  
