@@ -374,5 +374,63 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  }
 	  
 	  ```
-	  
-	  
+38. ##### Adicionando Projeto de WEB API	  
+	 - O projeto do WEB API será o responsável por gerar a instância do contexto PilotoRepositorio através da injeção de dependência. 
+	
+	 - Será necessário criar interfaces para o Repositório e a classe PilotoRepositorio implementa essa interface IPilotoRepositorio
+	
+	   ```
+	   using System;
+	   using System.Collections.Generic;
+	   using System.Text;
+	   
+	   namespace RallyDakar.Dominio.Interfaces
+	   {
+	       public interface IPilotoRepositorio
+	       {
+	   
+	       }
+	   }
+	   
+	   ```
+	
+	   ```
+	    public class PilotoRepositorio : IPilotoRepositorio
+	    {
+	   
+	   }
+	   ```
+	   
+	 - Criar uma pasta de solução 1- WEB e adicionar um projeto e uma pasta 1.1 API e adicionar um projeto do tipo ASPNET.Core RallyDaka.API marcar o projeto como projeto de inicialização
+	
+	 - Adicionar a referência do projeto de Dominio no projeto de API
+	
+	 - Adicionar o entity framework no projeto e adicionar o contexto na classe StartUp
+	
+	   ```
+	   public class Startup
+	   {
+	           public Startup(IConfiguration configuration)
+	           {
+	               Configuration = configuration;
+	           }
+	   
+	           public IConfiguration Configuration { get; }
+	   
+	           // This method gets called by the runtime. Use this method to add services to the container.
+	           public void ConfigureServices(IServiceCollection services)
+	           {
+	           	//Com Scope a cada requisição terá uma nova instancia de Db_Rally
+	               services.AddDbContext<RallyDbContext>(options => options.UseInMemoryDatabase("Db_Rally")
+	                   ,ServiceLifetime.Scoped
+	                   ,ServiceLifetime.Scoped);
+	               services.AddControllers();
+	   
+	               services.AddScoped<IPilotoRepositorio, PilotoRepositorio>();
+	           }
+	   }
+	   ```
+	
+	   
+
+ 
