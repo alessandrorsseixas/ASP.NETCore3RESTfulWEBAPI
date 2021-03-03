@@ -23,16 +23,20 @@ namespace RallyDaka.API.Controllers
         [HttpGet]
         public IActionResult ObterTodos()
         {
-            return Ok(_pilotoRepositorio.ObterTodos());
+            Piloto piloto = new Piloto()
+            {
+                Id = 1,
+                Nome = "alessandro"
+
+            };
+            List<Piloto> lista = new List<Piloto>();
+            lista.Add(piloto);
+            return Ok(lista);
+            //return Ok(_pilotoRepositorio.ObterTodos());
 
         }
-        /// <summary>
-        /// A api vai ler as requisições no corpo da chamada
-        /// </summary>
-        /// <param name="piloto"></param>
-        /// <returns></returns>
         [HttpPost]
-        public IActionResult Adicionar([FromBody]Piloto piloto)
+        public IActionResult AdicionarPiloto([FromBody]Piloto piloto)
         {
             _pilotoRepositorio.Adicionar(piloto);
             return Ok();

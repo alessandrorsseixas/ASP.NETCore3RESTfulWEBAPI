@@ -546,3 +546,5 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 
 42. ##### Chamando a API ( HTTPGet)	
 	- Teste com o postman
+43. ##### Chamando a API ( HTTPPost)	
+	- Teste com o postman

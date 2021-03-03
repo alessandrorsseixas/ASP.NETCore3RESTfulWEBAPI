@@ -19,7 +19,6 @@ namespace RallyDakar.Dominio.Entidades
         public double AltitudeNivelMar { get; set; }
         public bool PedalAcelerador { get; set; }
         public bool PedalFreio { get; set; }
-        public virtual Temporada Temporada { get; set; }
-        public virtual Piloto Piloto { get; set; }
+       
     }
 }
