@@ -430,7 +430,35 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	           }
 	   }
 	   ```
+39. ##### Adicionando um Controller	
+	 - Criar a controller PilotoController herdando de ControllerBase
+	
+	 - Criar uma variável readonly da interface IPilotoRepositorio e depois criar o metodo construtor. o AspNet.Core será responsável por passar a instancia do PilotoRepositorio a controller para cada requisição
+	
+	 - Criar um metodo com verbor HttpGet para retornar todos os pilotos
+	
+	   ```
+	   namespace RallyDaka.API.Controllers
+	   {
+	   
+	       [ApiController]
+	       [Route("api/produtos")]
+	       public class PilotoController : ControllerBase 
+	       {
+	           private readonly IPilotoRepositorio _pilotoRepositorio;
+	   
+	           public PilotoController(IPilotoRepositorio pilotoRepositorio)
+	           {
+	               _pilotoRepositorio = pilotoRepositorio;
+	           }
+	   
+	           [HttpGet]
+	           public IActionResult ObterTodos()
+	           {
+	               return Ok("Retornou com sucesso");
+	   
+	           }
+	       }
+	   ```
 	
 	   
-
- 
