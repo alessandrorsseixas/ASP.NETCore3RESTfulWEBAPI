@@ -10,7 +10,7 @@ namespace RallyDaka.API.Controllers
 {
 
     [ApiController]
-    [Route("api/produtos")]
+    [Route("api/pilotos")]
     public class PilotoController : ControllerBase 
     {
         private readonly IPilotoRepositorio _pilotoRepositorio;
