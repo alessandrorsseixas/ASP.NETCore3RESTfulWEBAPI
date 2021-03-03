@@ -541,9 +541,6 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	   }
 	   ```
 41. ##### Testando sua API com o Postman	
-	
-<<<<<<< Updated upstream
-	   
-=======
+
 	[https://www.postman.com/](Download Postman)
->>>>>>> Stashed changes
+
