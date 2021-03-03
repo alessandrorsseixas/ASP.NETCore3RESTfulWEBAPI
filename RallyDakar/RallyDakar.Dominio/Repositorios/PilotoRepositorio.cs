@@ -16,20 +16,20 @@ namespace RallyDakar.Dominio.Repositorios
             _rallyDbContext = rallyDbContext;
         }
 
-        public void AdicionarPiloto(Piloto piloto)
+        public void Adicionar(Piloto piloto)
         {
             _rallyDbContext.Pilotos.Add(piloto);
 
         }
 
-        public IEnumerable<Piloto> ObterTodosPilotos()
+        public IEnumerable<Piloto> ObterTodos()
         {
 
            return _rallyDbContext.Pilotos.ToList();
 
         }
 
-        public IEnumerable<Piloto> ObterTodosPilotos(string nome)
+        public IEnumerable<Piloto> ObterTodos(string nome)
         {
 
             return _rallyDbContext.Pilotos

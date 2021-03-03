@@ -280,9 +280,9 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	
 	- Ao executar o teste foi gerado um erro devido a ICollection<Equipe> não estava instanciado. Será criado o método construtor para instanciar a lista.
 	
-	  ![](\..\Attachment\Erro_Teste.PNG)
+	  ![](Attachment\Erro_Teste.PNG)
 	
-	  ![](\..\Attachment\MotivoErro.PNG)
+	  ![](\Attachment\MotivoErro.PNG)
 	
 	  ```
 	  public Temporada()
@@ -459,6 +459,86 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	   
 	           }
 	       }
+	   ```
+40. ##### Refactoring no PilotoRepositorio	
+	 - Refatorar a Interface IPilotoRepositorio com os metodos da PilotoRepositorio para incluir as assinaturas dos métodos e alterando o nome para remover o termo piloto
+	
+	   ```
+	   namespace RallyDakar.Dominio.Interfaces
+	   {
+	       public interface IPilotoRepositorio
+	       {
+	           void Adicionar(Piloto piloto);
+	   
+	           IEnumerable<Piloto> ObterTodos();
+	   
+	           IEnumerable<Piloto> ObterTodos(string nome);
+	   
+	       }
+	   }
+	   ```
+	
+	- Alterar a classe concreta PilotoRepositorio para implementar os novos métodos da interface Ipiloto Repositorio.
+	
+	  ```
+	  namespace RallyDakar.Dominio.Repositorios
+	  {
+	      public class PilotoRepositorio : IPilotoRepositorio
+	      {
+	          private readonly RallyDbContext _rallyDbContext;
+	          public PilotoRepositorio(RallyDbContext rallyDbContext)
+	          {
+	              _rallyDbContext = rallyDbContext;
+	          }
+	  
+	          public void Adicionar(Piloto piloto)
+	          {
+	              _rallyDbContext.Pilotos.Add(piloto);
+	  
+	          }
+	  
+	          public IEnumerable<Piloto> ObterTodos()
+	          {
+	  
+	             return _rallyDbContext.Pilotos.ToList();
+	  
+	          }
+	  
+	          public IEnumerable<Piloto> ObterTodos(string nome)
+	          {
+	  
+	              return _rallyDbContext.Pilotos
+	                  .Where(x=>x.Nome.Contains(nome))
+	                  .ToList();
+	  
+	          }
+	      }
+	  }
+	  
+	  ```
+	
+	  
+	
+	 - Adicionando o método ObterTodos do PilotoRepositorio no método da controller ObterTodos e incluir o método Adicionar [HttpPost].
+	
+	   ```
+	   [HttpGet]
+	   public IActionResult ObterTodos()
+	   {
+	   	return Ok(_pilotoRepositorio.ObterTodos());
+	   }
+	   
+	   /// <summary>
+	   /// A api vai ler as requisições no corpo da chamada
+	   /// </summary>
+	   /// <param name="piloto"></param>
+	   /// <returns></returns>
+	   [HttpPost]
+	   public IActionResult Adicionar([FromBody]Piloto piloto)
+	   {
+	    _pilotoRepositorio.Adicionar(piloto);
+	    return Ok();
+	   }
 	   ```
 	
 	   
