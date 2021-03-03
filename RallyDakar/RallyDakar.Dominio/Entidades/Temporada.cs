@@ -20,8 +20,6 @@ namespace RallyDakar.Dominio.Entidades
 
         public virtual ICollection<Equipe> Equipes { get; set; }
 
-        public virtual ICollection<Telemetria> Telemetrias { get; set; }
-
         public void AdicionarEquipe(Equipe equipe)
         {
             //Pré condição
