@@ -548,3 +548,13 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	- Teste com o postman
 43. ##### Chamando a API ( HTTPPost)	
 	- Teste com o postman
+44. ##### Resumo dos Comandos
+	- HttpGet - Coletar informações
+	- HttpPost - Adicionar informações
+	- HttpPut - Atualizar Informações totais do objeto
+	- HttpPatch - Atualizar informações parciais do objeto
+	- HttpDelete - Delete informações
+45. ##### Resumo dos Comandos
+	- Escrevendo os métodos Put, Patch e Delete
+
+	

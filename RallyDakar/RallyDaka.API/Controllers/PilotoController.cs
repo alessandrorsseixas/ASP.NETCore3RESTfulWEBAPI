@@ -23,22 +23,42 @@ namespace RallyDaka.API.Controllers
         [HttpGet]
         public IActionResult ObterTodos()
         {
-            Piloto piloto = new Piloto()
-            {
-                Id = 1,
-                Nome = "alessandro"
+            //Piloto piloto = new Piloto()
+            //{
+            //    Id = 1,
+            //    Nome = "alessandro"
 
-            };
-            List<Piloto> lista = new List<Piloto>();
-            lista.Add(piloto);
-            return Ok(lista);
-            //return Ok(_pilotoRepositorio.ObterTodos());
+            //};
+            //List<Piloto> lista = new List<Piloto>();
+            //lista.Add(piloto);
+            //return Ok(lista);
+            return Ok(_pilotoRepositorio.ObterTodos());
 
         }
         [HttpPost]
         public IActionResult AdicionarPiloto([FromBody]Piloto piloto)
         {
             _pilotoRepositorio.Adicionar(piloto);
+            return Ok();
+        }
+
+        [HttpPut]
+        public IActionResult AtualizarPiloto([FromBody]Piloto piloto)
+        {
+            return Ok();
+        }
+
+
+        [HttpPatch]
+        public IActionResult AtualizarParcialPiloto([FromBody]Piloto piloto)
+        {
+            return Ok();
+        }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult DeletarPiloto([FromBody]int id)
+        {
             return Ok();
         }
     }
