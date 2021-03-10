@@ -557,4 +557,28 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 45. ##### Resumo dos Comandos
 	- Escrevendo os métodos Put, Patch e Delete
 
+	  ```
+	   [HttpPut]
+	   public IActionResult AtualizarPiloto([FromBody]Piloto piloto)
+	   {
+	   return Ok();
+	   }
+	  
+	  
+	  [HttpPatch]
+	  public IActionResult AtualizarParcialPiloto([FromBody]Piloto piloto)
+	  {
+	  return Ok();
+	  }
+	  
+	  
+	  [HttpDelete("{id}")]
+	  public IActionResult DeletarPiloto([FromBody]int id)
+	  {
+	  return Ok();
+	  }
+	  ```
+	
+	  
+	
 	
