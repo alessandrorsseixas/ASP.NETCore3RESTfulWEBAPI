@@ -578,7 +578,14 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  return Ok();
 	  }
 	  ```
+46. ##### Conhecendo o HTTP Status Code	
 	
-	  
+	- Respostas de informação (100-199)
+	- Respostas de sucesso (200-299)
+	- Redirecionamentos (300-399)
+	- Erros do cliente (400-499)
+	- Erros do servidor (500-599)
 	
+47. ##### [Artigo] Status Code
 	
+	[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status]()
