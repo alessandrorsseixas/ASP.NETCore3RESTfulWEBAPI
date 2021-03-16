@@ -649,5 +649,62 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  
 	  }
 	  ```
-	
-	  
+51. ##### Método POST Com StatusCode		
+
+    - Trabalhando com StatusCode para Post
+      
+      ```
+       [HttpPost]
+       public IActionResult AdicionarPiloto([FromBody]Piloto piloto)
+       {
+      
+                  try
+                  {
+                      var pilotos = _pilotoRepositorio.ObterTodos();
+                      if (_pilotoRepositorio.Exite(piloto.Id))
+                      {
+                          return StatusCode(409,"Já existe um piloto cadastrado com o mesmo ID");
+      
+                      }
+                      else
+                      {
+                          _pilotoRepositorio.Adicionar(piloto);
+                          return CreatedAtRoute("Piloto Cadastrado com sucesso", new { id=piloto.Id},piloto);
+                      }
+      
+                      
+                  }
+                  catch (Exception ex)
+                  {
+                      return StatusCode(500, "Ocorreu um erro inesperado");
+      
+                  }
+      }
+      ```
+      
+    - Método Obter 
+
+      ```
+      [HttpGet("{id}",Name ="Obter")]
+      public IActionResult Obter(int id)
+      {
+      
+          try
+          {
+              var piloto = _pilotoRepositorio.Obter(id);
+              if (piloto== null)
+              return NoContent();
+      
+          return Ok(piloto);
+          }
+          	catch (Exception ex)
+          {
+          	return StatusCode(500, "Ocorreu um erro inesperado");
+      
+          }
+      
+      
+      }
+      ```
+
+      

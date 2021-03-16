@@ -20,6 +20,30 @@ namespace RallyDaka.API.Controllers
             _pilotoRepositorio = pilotoRepositorio;
         }
 
+
+
+        [HttpGet("{id}",Name ="Obter")]
+        public IActionResult Obter(int id)
+        {
+
+            try
+            {
+                var piloto = _pilotoRepositorio.Obter(id);
+                if (piloto== null)
+                    return NoContent();
+
+                return Ok(piloto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Ocorreu um erro inesperado");
+
+            }
+
+
+        }
+
+
         [HttpGet]
         public IActionResult ObterTodos()
         {
@@ -43,8 +67,28 @@ namespace RallyDaka.API.Controllers
         [HttpPost]
         public IActionResult AdicionarPiloto([FromBody]Piloto piloto)
         {
-            _pilotoRepositorio.Adicionar(piloto);
-            return Ok();
+
+            try
+            {
+                var pilotos = _pilotoRepositorio.ObterTodos();
+                if (_pilotoRepositorio.Exite(piloto.Id))
+                {
+                    return StatusCode(409,"Já existe um piloto cadastrado com o mesmo ID");
+
+                }
+                else
+                {
+                    _pilotoRepositorio.Adicionar(piloto);
+                    return CreatedAtRoute("Piloto Cadastrado com sucesso", new { id=piloto.Id},piloto);
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Ocorreu um erro inesperado");
+
+            }
         }
 
         [HttpPut]
