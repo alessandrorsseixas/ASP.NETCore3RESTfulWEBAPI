@@ -23,12 +23,21 @@ namespace RallyDaka.API.Controllers
         [HttpGet]
         public IActionResult ObterTodos()
         {
-         
-            var pilotos = _pilotoRepositorio.ObterTodos();
-            if (!pilotos.Any())
-                return NoContent();
 
-            return Ok();
+            try
+            {
+                var pilotos = _pilotoRepositorio.ObterTodos();
+                if (!pilotos.Any())
+                    return NoContent();
+
+                return Ok();
+            }
+            catch(Exception ex)
+            {
+                return  StatusCode(500,"Ocorreu um erro inesperado");
+
+            }
+            
 
         }
         [HttpPost]

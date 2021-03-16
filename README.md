@@ -624,5 +624,30 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  
 	  }
 	  ```
+50. ##### Tratamento de Erros		
+	- Trabalhando com exceções nas API's
+	
+	  ```
+	  [HttpGet]
+	  public IActionResult ObterTodos()
+	  {
+	  
+	      try
+	      {
+	          var pilotos = _pilotoRepositorio.ObterTodos();
+	          if (!pilotos.Any())
+	          return NoContent();
+	  
+	      	return Ok();
+	      }
+	      catch(Exception ex)
+	      {
+	      return  StatusCode(500,"Ocorreu um erro inesperado");
+	  
+	  	}
+	  
+	  
+	  }
+	  ```
 	
 	  
