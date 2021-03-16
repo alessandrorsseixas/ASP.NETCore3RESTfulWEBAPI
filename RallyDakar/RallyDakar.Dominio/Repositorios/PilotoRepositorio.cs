@@ -29,6 +29,20 @@ namespace RallyDakar.Dominio.Repositorios
 
         }
 
+        public Piloto Obter(int pilotoId)
+        {
+
+            return _rallyDbContext.Pilotos.FirstOrDefault(x=>x.Id == pilotoId);
+
+        }
+
+        public bool Exite(int pilotoId)
+        {
+
+            return _rallyDbContext.Pilotos.Any(x => x.Id == pilotoId);
+
+        }
+
         public IEnumerable<Piloto> ObterTodos(string nome)
         {
 

@@ -13,5 +13,12 @@ namespace RallyDakar.Dominio.Interfaces
 
         IEnumerable<Piloto> ObterTodos(string nome);
 
+        Piloto Obter(int pilotoId);
+
+        bool Exite(int pilotoId);
+
+
+
+
     }
 }
