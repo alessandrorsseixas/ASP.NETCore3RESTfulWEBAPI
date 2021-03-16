@@ -608,5 +608,21 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 	  
 	  }
 	  ```
+49. ##### Status Code - Recurso Não Encontrado	
+	- Adicionando o Retorno NoContent no método ObterTodos()
+	
+	  ```
+	  [HttpGet]
+	  public IActionResult ObterTodos()
+	  {
+	  
+	      var pilotos = _pilotoRepositorio.ObterTodos();
+	      if (!pilotos.Any())
+	      return NoContent();
+	  
+	      return Ok();
+	  
+	  }
+	  ```
 	
 	  

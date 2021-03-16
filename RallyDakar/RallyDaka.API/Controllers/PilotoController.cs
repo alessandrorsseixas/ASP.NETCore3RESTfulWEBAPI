@@ -23,16 +23,12 @@ namespace RallyDaka.API.Controllers
         [HttpGet]
         public IActionResult ObterTodos()
         {
-            //Piloto piloto = new Piloto()
-            //{
-            //    Id = 1,
-            //    Nome = "alessandro"
+         
+            var pilotos = _pilotoRepositorio.ObterTodos();
+            if (!pilotos.Any())
+                return NoContent();
 
-            //};
-            //List<Piloto> lista = new List<Piloto>();
-            //lista.Add(piloto);
-            //return Ok(lista);
-            return Ok(_pilotoRepositorio.ObterTodos());
+            return Ok();
 
         }
         [HttpPost]
