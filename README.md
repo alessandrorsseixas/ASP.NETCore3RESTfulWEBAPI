@@ -589,3 +589,24 @@ Imagina nesse momento o número de pessoas acessando sistemas web de ensino(EAD)
 47. ##### [Artigo] Status Code
 	
 	[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status]()
+	
+48. ##### Alterando o Piloto Repositório
+	- Criando os métodos Obter e Existe passando Id como parâmetro
+	
+	  ```
+	  public Piloto Obter(int pilotoId)
+	  {
+	  
+	  	return _rallyDbContext.Pilotos.FirstOrDefault(x=>x.Id == pilotoId);
+	  
+	  }
+	  
+	  public bool Exite(int pilotoId)
+	  {
+	  
+	  	return _rallyDbContext.Pilotos.Any(x => x.Id == pilotoId);
+	  
+	  }
+	  ```
+	
+	  
