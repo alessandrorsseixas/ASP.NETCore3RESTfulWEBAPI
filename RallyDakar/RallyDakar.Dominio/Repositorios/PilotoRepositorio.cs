@@ -19,6 +19,21 @@ namespace RallyDakar.Dominio.Repositorios
         public void Adicionar(Piloto piloto)
         {
             _rallyDbContext.Pilotos.Add(piloto);
+            _rallyDbContext.SaveChanges();
+        }
+
+        public void Atualizar(Piloto piloto)
+        {
+            _rallyDbContext.Attach(piloto);
+            _rallyDbContext.Entry(piloto).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _rallyDbContext.SaveChanges();
+
+        }
+
+        public void Deletar(Piloto piloto)
+        {
+            _rallyDbContext.Pilotos.Remove(piloto);
+            _rallyDbContext.SaveChanges();
 
         }
 
@@ -36,7 +51,7 @@ namespace RallyDakar.Dominio.Repositorios
 
         }
 
-        public bool Exite(int pilotoId)
+        public bool Existe(int pilotoId)
         {
 
             return _rallyDbContext.Pilotos.Any(x => x.Id == pilotoId);

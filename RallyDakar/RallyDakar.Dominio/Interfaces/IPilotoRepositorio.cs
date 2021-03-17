@@ -9,13 +9,16 @@ namespace RallyDakar.Dominio.Interfaces
     {
         void Adicionar(Piloto piloto);
 
+        void Atualizar(Piloto piloto);
+        void Deletar(Piloto piloto);
+
         IEnumerable<Piloto> ObterTodos();
 
         IEnumerable<Piloto> ObterTodos(string nome);
 
         Piloto Obter(int pilotoId);
 
-        bool Exite(int pilotoId);
+        bool Existe(int pilotoId);
 
 
 

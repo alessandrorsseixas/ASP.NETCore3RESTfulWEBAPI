@@ -28,8 +28,6 @@ C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.A
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\bin\Debug\netcoreapp3.1\RallyDakar.Dominio.dll
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\bin\Debug\netcoreapp3.1\RallyDakar.Dominio.pdb
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.csprojAssemblyReference.cache
-C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.csproj.CoreCompileInputs.cache
-C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.MvcApplicationPartsAssemblyInfo.cache
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.AssemblyInfoInputs.cache
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.AssemblyInfo.cs
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.RazorTargetAssemblyInfo.cache
@@ -39,3 +37,7 @@ C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.A
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.dll
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.pdb
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.genruntimeconfig.cache
+C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

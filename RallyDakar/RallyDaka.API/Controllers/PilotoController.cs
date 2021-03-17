@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Mvc;
 using RallyDakar.Dominio.Entidades;
 using RallyDakar.Dominio.Interfaces;
 using System;
@@ -71,7 +72,7 @@ namespace RallyDaka.API.Controllers
             try
             {
                 var pilotos = _pilotoRepositorio.ObterTodos();
-                if (_pilotoRepositorio.Exite(piloto.Id))
+                if (_pilotoRepositorio.Existe(piloto.Id))
                 {
                     return StatusCode(409,"Já existe um piloto cadastrado com o mesmo ID");
 
@@ -92,23 +93,64 @@ namespace RallyDaka.API.Controllers
         }
 
         [HttpPut]
-        public IActionResult AtualizarPiloto([FromBody]Piloto piloto)
+        public IActionResult Atualizar([FromBody]Piloto piloto)
         {
-            return Ok();
+            try
+            {
+                if (!_pilotoRepositorio.Existe(piloto.EquipeID))
+                    return NoContent();
+                _pilotoRepositorio.Atualizar(piloto);
+                return Ok("Piloto Atualizado com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Ocorreu um erro inesperado");
+
+            }
         }
 
 
-        [HttpPatch]
-        public IActionResult AtualizarParcialPiloto([FromBody]Piloto piloto)
+        [HttpPatch("id")]
+        public IActionResult Patch(int id,[FromBody]JsonPatchDocument<Piloto> patchpiloto)
         {
-            return Ok();
+            try
+            {
+                if (!_pilotoRepositorio.Existe(id))
+                    return NoContent();
+               
+                var piloto = _pilotoRepositorio.Obter(id);
+                patchpiloto.ApplyTo(piloto);
+
+                _pilotoRepositorio.Atualizar(piloto);
+
+
+                return Ok("Piloto Atualizado com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Ocorreu um erro inesperado");
+
+            }
         }
 
 
         [HttpDelete("{id}")]
-        public IActionResult DeletarPiloto([FromBody]int id)
+        public IActionResult Deletar([FromBody]int id)
         {
-            return Ok();
+            try
+            {
+                if (!_pilotoRepositorio.Existe(id))
+                    return NoContent();
+                var piloto = _pilotoRepositorio.Obter(id);
+                _pilotoRepositorio.Deletar(piloto);
+
+                return Ok("Piloto Atualizado com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Ocorreu um erro inesperado");
+
+            }
         }
     }
 }
