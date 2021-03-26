@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QA2a1socZjxA3LRLX14shLto50VVxwHwmMAdgXn/p19W9pS+iTajQKie40DBLDS/CvX32Pme8IgmhtDgdoGNXw==",
+  "dgSpecHash": "h4RCoSREeTD2wBoUj8i5sd2JQFw5RUWuVOdWpeTVmtU6T/cJju92Zi3t8R+kWcOchM66ukM33N3ODLEwxq8YXg==",
   "success": true,
   "projectFilePath": "C:\\dados Alessandro\\GIT\\Estudos\\ASP.NETCore3RESTfulWEBAPI\\RallyDakar\\RallyDaka.API\\RallyDaka.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\alessandro.seixas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\alessandro.seixas\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.13\\microsoft.aspnetcore.jsonpatch.3.1.13.nupkg.sha512",
     "C:\\Users\\alessandro.seixas\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.13\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.13.nupkg.sha512",
     "C:\\Users\\alessandro.seixas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
@@ -28,7 +29,8 @@
     "C:\\Users\\alessandro.seixas\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\alessandro.seixas\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\alessandro.seixas\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "C:\\Users\\alessandro.seixas\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    "C:\\Users\\alessandro.seixas\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "C:\\Users\\alessandro.seixas\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

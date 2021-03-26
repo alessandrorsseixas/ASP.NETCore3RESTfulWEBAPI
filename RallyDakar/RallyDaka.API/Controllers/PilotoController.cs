@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.JsonPatch;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using RallyDakar.Dominio.Entidades;
 using RallyDakar.Dominio.Interfaces;
+using RallyDakar.Dominio.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +17,11 @@ namespace RallyDaka.API.Controllers
     public class PilotoController : ControllerBase 
     {
         private readonly IPilotoRepositorio _pilotoRepositorio;
-
-        public PilotoController(IPilotoRepositorio pilotoRepositorio)
+        private readonly IMapper _mapper;
+        public PilotoController(IPilotoRepositorio pilotoRepositorio,IMapper mapper)
         {
             _pilotoRepositorio = pilotoRepositorio;
+            _mapper = mapper;
         }
 
 
@@ -65,13 +68,17 @@ namespace RallyDaka.API.Controllers
             
 
         }
+
+
+
         [HttpPost]
-        public IActionResult AdicionarPiloto([FromBody]Piloto piloto)
+        public IActionResult AdicionarPiloto([FromBody]PilotoModelo pilotoModelo)
         {
 
             try
             {
-                var pilotos = _pilotoRepositorio.ObterTodos();
+
+                var piloto = _mapper.Map<Piloto>(pilotoModelo);
                 if (_pilotoRepositorio.Existe(piloto.Id))
                 {
                     return StatusCode(409,"Já existe um piloto cadastrado com o mesmo ID");
@@ -151,6 +158,15 @@ namespace RallyDaka.API.Controllers
                 return StatusCode(500, "Ocorreu um erro inesperado");
 
             }
+        }
+
+
+       [HttpOptions]
+       public IActionResult DevolverOperacoesPermitidas()
+        {
+
+            Response.Headers.Add("ALLOW", "GET,POST,PUT,PATCH,OPTIONS");
+            return Ok();
         }
     }
 }
