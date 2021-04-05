@@ -1064,27 +1064,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alessandro.seixas\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dados Alessandro\\GIT\\Estudos\\ASP.NETCore3RESTfulWEBAPI\\RallyDakar\\RallyDakar.Dominio\\RallyDakar.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\ASP.NETCore3RESTfulWEBAPI\\RallyDakar\\RallyDakar.Dominio\\RallyDakar.Dominio.csproj",
       "projectName": "RallyDakar.Dominio",
-      "projectPath": "C:\\dados Alessandro\\GIT\\Estudos\\ASP.NETCore3RESTfulWEBAPI\\RallyDakar\\RallyDakar.Dominio\\RallyDakar.Dominio.csproj",
-      "packagesPath": "C:\\Users\\alessandro.seixas\\.nuget\\packages\\",
-      "outputPath": "C:\\dados Alessandro\\GIT\\Estudos\\ASP.NETCore3RESTfulWEBAPI\\RallyDakar\\RallyDakar.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\ASP.NETCore3RESTfulWEBAPI\\RallyDakar\\RallyDakar.Dominio\\RallyDakar.Dominio.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\ASP.NETCore3RESTfulWEBAPI\\RallyDakar\\RallyDakar.Dominio\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\alessandro.seixas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -1095,6 +1088,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -1106,6 +1100,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
@@ -1128,7 +1123,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

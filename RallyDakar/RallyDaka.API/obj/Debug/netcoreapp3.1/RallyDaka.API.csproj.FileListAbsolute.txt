@@ -44,3 +44,10 @@ C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.A
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.csproj.CoreCompileInputs.cache
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.dll
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDaka.API\obj\Debug\netcoreapp3.1\RallyDaka.API.pdb

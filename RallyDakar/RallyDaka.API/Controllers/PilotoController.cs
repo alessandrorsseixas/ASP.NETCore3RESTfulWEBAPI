@@ -36,7 +36,8 @@ namespace RallyDaka.API.Controllers
                 if (piloto== null)
                     return NoContent();
 
-                return Ok(piloto);
+                var pilotoModelo = _mapper.Map<PilotoModelo>(piloto);
+                return Ok(pilotoModelo);
             }
             catch (Exception ex)
             {
@@ -57,8 +58,8 @@ namespace RallyDaka.API.Controllers
                 var pilotos = _pilotoRepositorio.ObterTodos();
                 if (!pilotos.Any())
                     return NoContent();
-
-                return Ok();
+                var pilotosModelo = _mapper.Map<IEnumerable<Piloto>>(pilotos);
+                return Ok(pilotosModelo);
             }
             catch(Exception ex)
             {
@@ -100,12 +101,14 @@ namespace RallyDaka.API.Controllers
         }
 
         [HttpPut]
-        public IActionResult Atualizar([FromBody]Piloto piloto)
+        public IActionResult Atualizar([FromBody]PilotoModelo pilotoModelo)
         {
             try
             {
-                if (!_pilotoRepositorio.Existe(piloto.EquipeID))
+                if (!_pilotoRepositorio.Existe(pilotoModelo.EquipeID))
                     return NoContent();
+
+                var piloto = _mapper.Map<Piloto>(pilotoModelo);
                 _pilotoRepositorio.Atualizar(piloto);
                 return Ok("Piloto Atualizado com sucesso");
             }
@@ -118,7 +121,7 @@ namespace RallyDaka.API.Controllers
 
 
         [HttpPatch("id")]
-        public IActionResult Patch(int id,[FromBody]JsonPatchDocument<Piloto> patchpiloto)
+        public IActionResult Patch(int id,[FromBody]JsonPatchDocument<PilotoModelo> patchpilotoModelo)
         {
             try
             {
@@ -126,7 +129,12 @@ namespace RallyDaka.API.Controllers
                     return NoContent();
                
                 var piloto = _pilotoRepositorio.Obter(id);
-                patchpiloto.ApplyTo(piloto);
+
+                var pilotoModelo = _mapper.Map<PilotoModelo>(piloto);
+
+                patchpilotoModelo.ApplyTo(pilotoModelo);
+
+                piloto = _mapper.Map(pilotoModelo, piloto); 
 
                 _pilotoRepositorio.Atualizar(piloto);
 

@@ -7,3 +7,12 @@ C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.AssemblyInfo.cs
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.dll
 C:\dados Alessandro\GIT\Estudos\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.pdb
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\bin\Debug\netstandard2.0\RallyDakar.Dominio.deps.json
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\bin\Debug\netstandard2.0\RallyDakar.Dominio.dll
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\bin\Debug\netstandard2.0\RallyDakar.Dominio.pdb
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.dll
+C:\Users\Usuario\Documents\GitHub\ASP.NETCore3RESTfulWEBAPI\RallyDakar\RallyDakar.Dominio\obj\Debug\netstandard2.0\RallyDakar.Dominio.pdb
